@@ -2738,11 +2738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.API/LibraryManagement.API.csproj",
+      "projectUniqueName": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.API/LibraryManagement.API.csproj",
       "projectName": "LibraryManagement.API",
-      "projectPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.API/LibraryManagement.API.csproj",
+      "projectPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.API/LibraryManagement.API.csproj",
       "packagesPath": "/home/saikat/.nuget/packages/",
-      "outputPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.API/obj/",
+      "outputPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/saikat/.nuget/NuGet/NuGet.Config"
@@ -2757,11 +2757,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.BLL/LibraryManagement.BLL.csproj": {
-              "projectPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.BLL/LibraryManagement.BLL.csproj"
+            "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.BLL/LibraryManagement.BLL.csproj": {
+              "projectPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.BLL/LibraryManagement.BLL.csproj"
             },
-            "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/LibraryManagement.Common.csproj": {
-              "projectPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/LibraryManagement.Common.csproj"
+            "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/LibraryManagement.Common.csproj": {
+              "projectPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/LibraryManagement.Common.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.DAL/LibraryManagement.DAL.csproj": {}
+    "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.DAL/LibraryManagement.DAL.csproj": {}
   },
   "projects": {
-    "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/LibraryManagement.Common.csproj": {
+    "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/LibraryManagement.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/LibraryManagement.Common.csproj",
+        "projectUniqueName": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/LibraryManagement.Common.csproj",
         "projectName": "LibraryManagement.Common",
-        "projectPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/LibraryManagement.Common.csproj",
+        "projectPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/LibraryManagement.Common.csproj",
         "packagesPath": "/home/saikat/.nuget/packages/",
-        "outputPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/obj/",
+        "outputPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saikat/.nuget/NuGet/NuGet.Config"
@@ -337,14 +337,14 @@
         }
       }
     },
-    "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.DAL/LibraryManagement.DAL.csproj": {
+    "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.DAL/LibraryManagement.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.DAL/LibraryManagement.DAL.csproj",
+        "projectUniqueName": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.DAL/LibraryManagement.DAL.csproj",
         "projectName": "LibraryManagement.DAL",
-        "projectPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.DAL/LibraryManagement.DAL.csproj",
+        "projectPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.DAL/LibraryManagement.DAL.csproj",
         "packagesPath": "/home/saikat/.nuget/packages/",
-        "outputPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.DAL/obj/",
+        "outputPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saikat/.nuget/NuGet/NuGet.Config"
@@ -359,8 +359,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/LibraryManagement.Common.csproj": {
-                "projectPath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.Common/LibraryManagement.Common.csproj"
+              "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/LibraryManagement.Common.csproj": {
+                "projectPath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.Common/LibraryManagement.Common.csproj"
               }
             }
           }

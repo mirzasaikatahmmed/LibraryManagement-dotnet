@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iovG7ALXYiE=",
+  "dgSpecHash": "AOKNdyR/b1Y=",
   "success": true,
-  "projectFilePath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.API/LibraryManagement.API.csproj",
+  "projectFilePath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.API/LibraryManagement.API.csproj",
   "expectedPackageFiles": [
     "/home/saikat/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/saikat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

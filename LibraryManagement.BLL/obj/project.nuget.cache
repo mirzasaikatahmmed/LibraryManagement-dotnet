@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Zdhbx0vGzc=",
+  "dgSpecHash": "1cn3WAmBBGs=",
   "success": true,
-  "projectFilePath": "/home/saikat/Academic/dotnetFall25/A/LibraryManagement.BLL/LibraryManagement.BLL.csproj",
+  "projectFilePath": "/home/saikat/Academic/dotnetFall25/LibraryManagement-dotnet/LibraryManagement.BLL/LibraryManagement.BLL.csproj",
   "expectedPackageFiles": [
     "/home/saikat/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/saikat/.nuget/packages/microsoft.entityframeworkcore/10.0.2/microsoft.entityframeworkcore.10.0.2.nupkg.sha512",

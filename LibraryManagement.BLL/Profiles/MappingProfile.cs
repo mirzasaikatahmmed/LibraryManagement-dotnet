@@ -28,7 +28,7 @@ namespace LibraryManagement.BLL.Profiles
 
             CreateMap<Member, MemberDTO>();
             CreateMap<CreateMemberDTO, Member>()
-                .ForMember(dest => dest.MembershipDate, opt => opt.MapFrom(src => DateTime.UtcNow));
+                .ForMember(dest => dest.MembershipDate, opt => opt.MapFrom(src => DateTime.UtcNow.AddHours(6)));
             CreateMap<UpdateMemberDTO, Member>()
                 .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
 

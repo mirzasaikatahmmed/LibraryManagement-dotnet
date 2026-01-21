@@ -48,8 +48,8 @@ namespace LibraryManagement.BLL.Services
             {
                 BookId = dto.BookId,
                 MemberId = dto.MemberId,
-                LoanDate = DateTime.UtcNow,
-                DueDate = DateTime.UtcNow.AddDays(dto.LoanDurationDays),
+                LoanDate = DateTime.UtcNow.AddHours(6),
+                DueDate = DateTime.UtcNow.AddHours(6).AddDays(dto.LoanDurationDays),
                 Status = "Borrowed"
             };
 
@@ -72,14 +72,14 @@ namespace LibraryManagement.BLL.Services
                 return null;
             }
 
-            loan.ReturnDate = DateTime.UtcNow;
+            loan.ReturnDate = DateTime.UtcNow.AddHours(6);
             loan.Status = "Returned";
 
             loan.Book.AvailableCopies++;
 
-            if (DateTime.UtcNow > loan.DueDate)
+            if (DateTime.UtcNow.AddHours(6) > loan.DueDate)
             {
-                var daysLate = (DateTime.UtcNow - loan.DueDate).Days;
+                var daysLate = (DateTime.UtcNow.AddHours(6) - loan.DueDate).Days;
                 var fineAmount = daysLate * DAILY_FINE_AMOUNT;
 
                 var fine = new Fine
@@ -87,7 +87,7 @@ namespace LibraryManagement.BLL.Services
                     LoanId = loan.LoanId,
                     MemberId = loan.MemberId,
                     Amount = fineAmount,
-                    IssueDate = DateTime.UtcNow,
+                    IssueDate = DateTime.UtcNow.AddHours(6),
                     IsPaid = false,
                     Reason = $"Late return by {daysLate} days"
                 };
@@ -105,7 +105,7 @@ namespace LibraryManagement.BLL.Services
             var overdueLoans = _context.Loans
                 .Include(l => l.Book)
                 .Include(l => l.Member)
-                .Where(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow)
+                .Where(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow.AddHours(6))
                 .ToList();
 
             foreach (var loan in overdueLoans)
@@ -120,7 +120,7 @@ namespace LibraryManagement.BLL.Services
         public int ProcessOverdueFines()
         {
             var overdueLoans = _context.Loans
-                .Where(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow)
+                .Where(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow.AddHours(6))
                 .ToList();
 
             int finesCreated = 0;
@@ -129,7 +129,7 @@ namespace LibraryManagement.BLL.Services
             {
                 var existingFine = _context.Fines.FirstOrDefault(f => f.LoanId == loan.LoanId && !f.IsPaid);
 
-                var daysLate = (DateTime.UtcNow - loan.DueDate).Days;
+                var daysLate = (DateTime.UtcNow.AddHours(6) - loan.DueDate).Days;
                 var fineAmount = daysLate * DAILY_FINE_AMOUNT;
 
                 if (existingFine != null)
@@ -144,7 +144,7 @@ namespace LibraryManagement.BLL.Services
                         LoanId = loan.LoanId,
                         MemberId = loan.MemberId,
                         Amount = fineAmount,
-                        IssueDate = DateTime.UtcNow,
+                        IssueDate = DateTime.UtcNow.AddHours(6),
                         IsPaid = false,
                         Reason = $"Late return by {daysLate} days"
                     };

@@ -18,7 +18,7 @@ namespace LibraryManagement.BLL.Services
             var totalBooks = _context.Books.Count();
             var totalMembers = _context.Members.Count();
             var activeLoans = _context.Loans.Count(l => l.ReturnDate == null);
-            var overdueLoans = _context.Loans.Count(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow);
+            var overdueLoans = _context.Loans.Count(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow.AddHours(6));
             var totalFinesCollected = _context.Fines.Where(f => f.IsPaid).Sum(f => (decimal?)f.Amount) ?? 0;
             var pendingFines = _context.Fines.Where(f => !f.IsPaid).Sum(f => (decimal?)f.Amount) ?? 0;
 
@@ -76,7 +76,7 @@ namespace LibraryManagement.BLL.Services
             var overdueLoans = _context.Loans
                 .Include(l => l.Book)
                 .Include(l => l.Member)
-                .Where(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow)
+                .Where(l => l.ReturnDate == null && l.DueDate < DateTime.UtcNow.AddHours(6))
                 .Select(l => new LoanDTO
                 {
                     LoanId = l.LoanId,

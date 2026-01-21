@@ -8,7 +8,7 @@ namespace LibraryManagement.DAL.Entities
         public string Phone { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
         public DateTime MembershipDate { get; set; }
-        public string MembershipType { get; set; } = string.Empty; // Standard, Premium
+        public string MembershipType { get; set; } = string.Empty;
 
         public ICollection<Loan> Loans { get; set; } = new List<Loan>();
         public ICollection<Fine> Fines { get; set; } = new List<Fine>();

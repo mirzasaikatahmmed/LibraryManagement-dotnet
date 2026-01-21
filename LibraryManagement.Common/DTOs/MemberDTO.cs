@@ -33,7 +33,7 @@ namespace LibraryManagement.Common.DTOs
 
         [Required]
         [StringLength(20)]
-        public string MembershipType { get; set; } = string.Empty; // Standard, Premium
+        public string MembershipType { get; set; } = string.Empty;
     }
 
     public class UpdateMemberDTO
